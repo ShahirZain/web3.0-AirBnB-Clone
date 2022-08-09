@@ -3,7 +3,13 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import  bg from '../images/frontpagebg.png';
 import logo from "../images/airbnb.png";
-import { ConnectButton, Select, DatePicker, Input, Icon } from "web3uikit";
+import {
+  Button, ConnectButton,
+  Select,
+  DatePicker,
+  Input,
+  Icon,
+} from "web3uikit";
 
 const Home = () => {
   const [isConnected, setIsConnected] = useState(false);
@@ -100,6 +106,14 @@ const Home = () => {
           </div>
           <div className="vl" />
         </div>
+      </div>
+      <div className="randomLocation">
+          <div className="title"> Feel Adventurous</div>
+          <div className="text"> Let us Decide new Places</div>
+          <Button 
+            text="Explore a Location"
+            onClick={(event) => { console.log(checkOut)}}
+          />
       </div>
     </>
   );
